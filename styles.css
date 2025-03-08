@@ -1,0 +1,161 @@
+body{
+    background-color: var(--bgcolor);
+    }
+    a{
+    text-decoration: none;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--color);
+        font-size:2.8vmax;
+    }
+    .osn{
+        color: var(--color);
+        font-size:2.8vmax;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p::selection{
+        background-color: var(--color);
+        color: var(--bgcolor);
+    }
+    .ii{
+        width: 98vmax; 
+        height: 25vmax;
+    }
+    .mma{
+        margin-top: 2vmax;
+    }
+    .t::before{
+        color: var(--osn);
+        animation: animate 6s infinite;
+        content: "программирование";
+        font-size:2.8vmax;
+        font-weight: 1000;
+    }
+    @keyframes animate{
+    25%{
+        content: "программирование";
+    }
+    50%{
+        content: "развитие";
+    }
+    75%{
+        content: "IT";
+    }
+    100%{
+        content: "будущее";
+    }
+    }
+    .ned{
+        border-radius: 5%;
+        background-color: var(--kart);
+        width: 27vmax;
+        height: 18vmax;
+        position: relative;
+        transition: 1s;
+    }
+    .ned:hover{
+        background-color: var(--osn);
+        p{
+            color: var(--kart);
+            font-weight: 1000;
+        }
+    }
+    @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .ned::after, .ned::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle),var(--kart), var(--osn), var(--kart), var(--kart), var(--kart), var(--kart), var(--osn), var(--kart), var(--kart), var(--kart));
+        border-radius: 5%;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 1%;
+        animation: 4s spin linear infinite;
+    }
+    @keyframes spin{
+        from{
+            --angle: 0deg;
+        }
+        to{
+            --angle: 360deg;
+        }
+    }
+    .butotons{
+        gap: 4vmax;
+    }
+    .container .glass{
+        position: relative;
+        width: 7.56vmax;
+        height: 8.064vmax;
+        background: linear-gradient(#fff2, transparent);
+        border: 0.112vmax solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 1.05vmax 1.05vmax rgba(0, 0, 0, 0.25);
+        transition: 0.5s;
+        border-radius: 0.4032vmax;
+        margin: 0 -1.89vmax;
+        backdrop-filter: blur(0.4032vmax);
+        transform: rotate(calc(var(--r) * 1deg));
+    
+    }
+    .container:hover .glass{
+        transform: rotate(0deg);
+        margin: 0 0.4032vmax;
+    }
+    .container .glass svg{
+        font-size: 1.4em;
+        fill: #fff;
+    }
+    img {
+        -webkit-user-select:none;
+        -khtml-user-select:none;
+        -moz-user-select:none;
+        -o-user-select:none;
+        -ms-user-select: none;
+         user-select:none;
+         pointer-events:none
+    }
+    img::selection      {background:transparent;color:inherit;}
+    img::-moz-selection {background:transparent;color:inherit;}
+
+    @media(max-width: 768px){
+        .container .glass{
+            margin: 0 0.4032vmax;
+        }
+        .butotons{
+            flex-direction: column;
+            margin-top: -1vmax;
+        }
+        .ii{
+            width: 98vmin; 
+            height: 20vmax;
+        }
+        .mma{
+            margin-top: 5vmax;
+        }
+        .osnnnn{
+        flex-direction: column;
+        }
+    }
+    @media(max-height: 565px){
+            .container .glass{
+                margin: 0 0.4032vmax;
+            }
+    }
+    /*
+    -webkit
+    -moz
+    -ms
+    -o
+    */
