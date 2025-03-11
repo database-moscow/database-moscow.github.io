@@ -150,10 +150,63 @@ int main(){
 int s;
 double m, l;
 string n, j;
+start:
 cout<<"Введите систему счисления: ";
 cin>>s;
+if(s>16 or s<2){
+    cout<<"Введено некорректное значение."<<endl;
+    goto start;
+}
 cout<<"Введите 1 число в "<<s<<" системе счисления: ";
 cin>>n;
+if(s<=10){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='a' or n[z]=='A' or n[z]=='B' or n[z]=='b' or n[z]=='C' or n[z]=='c' or n[z]=='D' or n[z]=='d' or n[z]=='E' or n[z]=='e' or n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
+if(s==11){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='B' or n[z]=='b' or n[z]=='C' or n[z]=='c' or n[z]=='D' or n[z]=='d' or n[z]=='E' or n[z]=='e' or n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
+if(s==12){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='C' or n[z]=='c' or n[z]=='D' or n[z]=='d' or n[z]=='E' or n[z]=='e' or n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
+if(s==13){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='D' or n[z]=='d' or n[z]=='E' or n[z]=='e' or n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
+if(s==14){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='E' or n[z]=='e' or n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
+if(s==15){
+    for(int z=0; z<=(n.length()); z++){
+        if(n[z]=='F' or n[z]=='f'){
+            cout<<"Введено некорректное значение."<<endl;
+            goto start;
+        }
+    }
+}
 cout<<"Введите 2 число в 10 cистеме счисления: ";
 cin>>m;
 l=ibinary(n, s);
