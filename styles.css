@@ -27,7 +27,7 @@ body{
         height: 25vmax;
     }
     .mma{
-        margin-top: 2vmax;
+        margin-top: 5vmax;
     }
     .t::before{
         color: var(--osn);
@@ -142,7 +142,7 @@ body{
             height: 20vmax;
         }
         .mma{
-            margin-top: 5vmax;
+            margin-top: 14vmax;
         }
         .osnnnn{
         flex-direction: column;
