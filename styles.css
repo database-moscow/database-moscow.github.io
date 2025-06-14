@@ -108,6 +108,7 @@ width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(270deg); 
 .dk{
    display: flex; 
    gap: 5vmax;
+   margin-top: -1vmax;
 }
 
 .str{
@@ -120,7 +121,7 @@ left: 2vmax;
 top: 26vmax;
 }
 .dk{
-    margin-top: -5vmax;
+    margin-top: -2vmax;
     gap: 2vmax;
     flex-direction: column;
 }
