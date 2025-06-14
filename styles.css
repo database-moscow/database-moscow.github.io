@@ -1,4 +1,7 @@
 body{
+display: flex;
+align-items: center;
+justify-content: center;
 background-color: var(--bgcolor);
 }
 a{
@@ -21,7 +24,14 @@ justify-content: center;
 }
 
 
-
+.kb{
+margin-top: 7vmax;
+}
+@media(max-width: 768px){
+.kb{
+margin-top: 30vmax;
+}
+}
 .pie-container {
     position: relative;
     width: 30vmax;
@@ -80,15 +90,7 @@ justify-content: center;
 .segment:nth-child(4) { transform: rotate(245deg); }
 
 
-.segment:hover::after{
-content: '';
-position: absolute;
-width: 100%;
-height: 100%;
-background-color: rgba(235, 241, 241, 0.5);;
-border-radius: 50%;
-pointer-events: none;
-}
+
 .f{
 width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(182deg); top: 14vmax; left: 22vmax; z-index: 1;
 }
@@ -100,4 +102,47 @@ width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(90deg); t
 }
 .s{
 width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(270deg); top: 22.2vmax; left: 6.8vmax; z-index: 1;
+}
+
+
+.dk{
+   display: flex; 
+   gap: 5vmax;
+}
+
+.str{
+top: 3vmax;
+}
+@media(max-width: 768px){
+.str{
+top: 26vmax;
+}
+.dk{
+    gap: 2vmax;
+    flex-direction: column;
+}
+}
+.zzz{
+display: flex;
+gap: 5vmax;
+}
+.zz{
+    display: flex; gap: 5vmax; margin-top: 1vmax; margin-bottom: 1vmax;
+}
+.zzzz{
+    display: flex; width: 8vmax; height: 3vmax; background-color: var(--kk); align-items: center;
+}
+@media(max-width: 768px){
+.zzzz{
+margin-left: 15vmax;
+}
+.zz{
+margin-left: -8vmax;
+gap: 0vmax;
+}
+.zzz{
+flex-direction: column;
+gap: 2vmax;
+margin-left: -7.5vmax;
+}
 }
