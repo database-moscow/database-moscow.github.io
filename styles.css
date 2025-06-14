@@ -111,13 +111,16 @@ width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(270deg); 
 }
 
 .str{
+left: 10vmax;
 top: 3vmax;
 }
 @media(max-width: 768px){
 .str{
+left: 2vmax;
 top: 26vmax;
 }
 .dk{
+    margin-top: -5vmax;
     gap: 2vmax;
     flex-direction: column;
 }
