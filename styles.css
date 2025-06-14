@@ -32,14 +32,14 @@ margin-top: 7vmax;
 margin-top: 30vmax;
 }
 }
-.pie-container {
+.pc {
     position: relative;
     width: 30vmax;
     height: 30vmax;
     margin: 5vmax auto;
 }
 
-.pie {
+.pi {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -52,7 +52,7 @@ margin-top: 30vmax;
 }
 
 
-.segments {
+.sgs {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -62,7 +62,7 @@ margin-top: 30vmax;
     z-index: 3;
 }
 
-.segment {
+.sg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -73,7 +73,7 @@ margin-top: 30vmax;
     transform-origin: center;
 }
 
-.segment .a {
+.sg .a {
     position: absolute;
     display: block;
     width: 100%;
@@ -84,10 +84,10 @@ margin-top: 30vmax;
     z-index: 4;
 }
 
-.segment:nth-child(1) { transform: rotate(335deg); }
-.segment:nth-child(2) { transform: rotate(65deg); }
-.segment:nth-child(3) { transform: rotate(155deg); }
-.segment:nth-child(4) { transform: rotate(245deg); }
+.sg:nth-child(1) { transform: rotate(335deg); }
+.sg:nth-child(2) { transform: rotate(65deg); }
+.sg:nth-child(3) { transform: rotate(155deg); }
+.sg:nth-child(4) { transform: rotate(245deg); }
 
 
 
