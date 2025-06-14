@@ -88,5 +88,16 @@ height: 100%;
 background-color: rgba(235, 241, 241, 0.5);;
 border-radius: 50%;
 pointer-events: none;
--webkit-transition: transform 2s ease-in-out;
+}
+.f{
+width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(182deg); top: 14vmax; left: 22vmax; z-index: 1;
+}
+.m{
+width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(0deg); top: 7.1vmax; left: -1.5vmax; z-index: 1;
+}
+.g{
+width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(90deg); top: -1.7vmax; left: 13.5vmax; z-index: 1;
+}
+.s{
+width: 9.5vmax; height: 9.5vmax; position: absolute; transform: rotate(270deg); top: 22.2vmax; left: 6.8vmax; z-index: 1;
 }
